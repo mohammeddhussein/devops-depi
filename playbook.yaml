@@ -11,4 +11,10 @@
     - name: update packages
       shell: sudo apt update
 
+    - name: listing
+      shell: ll
+      register: ll_reg
 
+    - name: ll
+      debug:
+        msg: "{{ ll_reg.stdout_lines }}"
