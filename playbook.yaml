@@ -1,0 +1,14 @@
+---
+
+- name: firstPlay
+
+  hosts: all
+
+  tasks:
+    - name: ping hosts
+      ping:
+
+    - name: update packages
+      shell: sudo apt update
+
+
